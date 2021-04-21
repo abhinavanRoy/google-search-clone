@@ -179,7 +179,11 @@ class _RootScreenState extends State<RootScreen> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children:<Widget> [
-                  Text("Google offered in:"),
+                  Text("Google offered in:",
+                  style: TextStyle(
+                    fontSize: 13.8,
+                  ),
+                  ),
 
                   TextButton(
                     onPressed: () {},
@@ -265,6 +269,14 @@ class _RootScreenState extends State<RootScreen> {
 
 
                 ],
+              ),
+
+              SizedBox(height: 100,),
+
+              Container(
+                width: width,
+                height: height/5.65,
+                color:Colors.grey[200],
               ),
             ],
           ),
