@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:googlesearch/Screens/RootScreenTablet.dart';
+
 
 class RootScreen extends StatefulWidget {
   @override
@@ -10,6 +12,8 @@ class _RootScreenState extends State<RootScreen> {
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
+    bool isSmallBottom = width <1520;
+
     return Scaffold(
       body: Column(
         children: <Widget>[
@@ -67,6 +71,8 @@ class _RootScreenState extends State<RootScreen> {
           SizedBox(
             height: 40,
           ),
+
+          isSmallBottom ? RootScreenTablet() :
           Column(
             children: <Widget>[
               Image.network(
@@ -154,7 +160,7 @@ class _RootScreenState extends State<RootScreen> {
                   CircleAvatar(
                     backgroundImage: NetworkImage(
                         'https://www.craftbrewingbusiness.com/wp-content/uploads/2020/06/mask-smiley-face.jpg'),
-                    radius: 19.5,
+                    radius: 19.9,
                     backgroundColor: Colors.white,
                   ),
                   SizedBox(
@@ -277,7 +283,7 @@ class _RootScreenState extends State<RootScreen> {
                 ],
               ),
               SizedBox(
-                height: 140,
+                height: 115,
               ),
               Container(
                 width: width,
@@ -327,7 +333,9 @@ class _RootScreenState extends State<RootScreen> {
                           width: 20,
                         ),
                         TextButton(
-                          onPressed: () {  },
+                          onPressed: () {
+                            print(width);
+                          },
                           child:Text(
                           "Advertising",
                           style: TextStyle(
@@ -359,7 +367,8 @@ class _RootScreenState extends State<RootScreen> {
                             color: Colors.grey[600],
                           ),
                         ),),
-                        SizedBox(width: width / 1.7),
+
+                      SizedBox(width: width / 1.7),
                         Row(
                           children: <Widget>[
                             TextButton(
@@ -403,7 +412,7 @@ class _RootScreenState extends State<RootScreen> {
                 ),
               ),
             ],
-          ),
+          ), //from google image
         ],
       ),
     );

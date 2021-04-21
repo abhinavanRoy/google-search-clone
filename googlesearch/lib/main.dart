@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:googlesearch/Screens/RootScreen.dart';
+import 'package:sizer/sizer.dart';
 
 void main() {
   runApp(MyApp());
@@ -9,11 +10,19 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
 
-      home: RootScreen(),
-    );
+
+        return MaterialApp(
+          debugShowCheckedModeBanner: false,
+
+          home: RootScreen(),
+
+        );
+
+
+
+    /*return MaterialApp(
+
+    );*/
   }
 }
