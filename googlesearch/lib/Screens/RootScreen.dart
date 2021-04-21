@@ -165,31 +165,31 @@ class _RootScreenState extends State<RootScreen> {
                     child: Text(
                       "Wear a mask. Help slow the spread of COVID-19",
                       style: TextStyle(
+                        color: Colors.deepPurple,
                         fontSize: 13.8,
                       ),
                     ),
                   ),
                 ],
               ),
-
               SizedBox(
                 height: 28,
               ),
-
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children:<Widget> [
-                  Text("Google offered in:",
-                  style: TextStyle(
-                    fontSize: 13.8,
+                children: <Widget>[
+                  Text(
+                    "Google offered in:",
+                    style: TextStyle(
+                      fontSize: 13.8,
+                    ),
                   ),
-                  ),
-
                   TextButton(
                     onPressed: () {},
                     child: Text(
                       "हिन्दी",
                       style: TextStyle(
+                        color: Colors.deepPurple,
                         fontSize: 13.8,
                       ),
                     ),
@@ -199,6 +199,7 @@ class _RootScreenState extends State<RootScreen> {
                     child: Text(
                       "বাংলা",
                       style: TextStyle(
+                        color: Colors.deepPurple,
                         fontSize: 13.8,
                       ),
                     ),
@@ -208,6 +209,7 @@ class _RootScreenState extends State<RootScreen> {
                     child: Text(
                       "తెలుగు",
                       style: TextStyle(
+                        color: Colors.deepPurple,
                         fontSize: 13.8,
                       ),
                     ),
@@ -217,6 +219,7 @@ class _RootScreenState extends State<RootScreen> {
                     child: Text(
                       "मराठी",
                       style: TextStyle(
+                        color: Colors.deepPurple,
                         fontSize: 13.8,
                       ),
                     ),
@@ -226,6 +229,7 @@ class _RootScreenState extends State<RootScreen> {
                     child: Text(
                       "தமிழ்",
                       style: TextStyle(
+                        color: Colors.deepPurple,
                         fontSize: 13.8,
                       ),
                     ),
@@ -235,6 +239,7 @@ class _RootScreenState extends State<RootScreen> {
                     child: Text(
                       "ગુજરાતી",
                       style: TextStyle(
+                        color: Colors.deepPurple,
                         fontSize: 13.8,
                       ),
                     ),
@@ -244,6 +249,7 @@ class _RootScreenState extends State<RootScreen> {
                     child: Text(
                       "ಕನ್ನಡ",
                       style: TextStyle(
+                        color: Colors.deepPurple,
                         fontSize: 13.8,
                       ),
                     ),
@@ -253,6 +259,7 @@ class _RootScreenState extends State<RootScreen> {
                     child: Text(
                       "മലയാളം",
                       style: TextStyle(
+                        color: Colors.deepPurple,
                         fontSize: 13.8,
                       ),
                     ),
@@ -262,21 +269,138 @@ class _RootScreenState extends State<RootScreen> {
                     child: Text(
                       "ਪੰਜਾਬੀ",
                       style: TextStyle(
+                        color: Colors.deepPurple,
                         fontSize: 14,
                       ),
                     ),
                   ),
-
-
                 ],
               ),
-
-              SizedBox(height: 100,),
-
+              SizedBox(
+                height: 140,
+              ),
               Container(
                 width: width,
-                height: height/5.65,
-                color:Colors.grey[200],
+                height: height / 8,
+                color: Colors.grey[200],
+                child: Column(
+                  children: <Widget>[
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Row(
+                      children: <Widget>[
+                        SizedBox(
+                          width: 20,
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Text(
+                            "India",
+                            style: TextStyle(
+                              fontSize: 15,
+                              color: Colors.grey[600],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    Divider(
+                      thickness: 0.6,
+                    ),
+                    Row(
+                      children: <Widget>[
+                        SizedBox(
+                          width: 20,
+                        ),
+                        TextButton(
+                          onPressed: () {  },
+                          child:Text(
+                          "About",
+                          style: TextStyle(
+                            fontSize: 15,
+                            color: Colors.grey[600],
+                          ),
+                        ),
+                        ),
+                        SizedBox(
+                          width: 20,
+                        ),
+                        TextButton(
+                          onPressed: () {  },
+                          child:Text(
+                          "Advertising",
+                          style: TextStyle(
+                            fontSize: 15,
+                            color: Colors.grey[600],
+                          ),
+                        ),),
+                        SizedBox(
+                          width: 20,
+                        ),
+                        TextButton(
+                          onPressed: () {  },
+                          child:Text(
+                          "Business",
+                          style: TextStyle(
+                            fontSize: 15,
+                            color: Colors.grey[600],
+                          ),
+                        ),),
+                        SizedBox(
+                          width: 20,
+                        ),
+                        TextButton(
+                          onPressed: () {  },
+                          child:Text(
+                          "How Search Works",
+                          style: TextStyle(
+                            fontSize: 15,
+                            color: Colors.grey[600],
+                          ),
+                        ),),
+                        SizedBox(width: width / 1.7),
+                        Row(
+                          children: <Widget>[
+                            TextButton(
+                              onPressed: () {  },
+                              child:Text(
+                              "Privacy",
+                              style: TextStyle(
+                                fontSize: 15,
+                                color: Colors.grey[600],
+                              ),
+                            ),),
+                            SizedBox(
+                              width: 20,
+                            ),
+                            TextButton(
+                              onPressed: () {  },
+                              child:Text(
+                              "Terms",
+                              style: TextStyle(
+                                fontSize: 15,
+                                color: Colors.grey[600],
+                              ),
+                            ),),
+                            SizedBox(
+                              width: 20,
+                            ),
+                            TextButton(
+                              onPressed: () {  },
+                              child:Text(
+                              "Settings",
+                              style: TextStyle(
+                                fontSize: 15,
+                                color: Colors.grey[600],
+                              ),
+                            ),),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
